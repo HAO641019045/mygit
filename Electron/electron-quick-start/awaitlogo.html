@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="logo">
+        <svg style="width: 300px; height:300px">
+            <g stroke="yellow" stroke-width="20" fill="none" stroke-linecap='round'>
+                <circle id="circle-logo-within" cx="150" cy="150" r="60" stroke-dasharray="180,80"
+                    filter="url(#filter-1)" />
+                <circle id="circle-logo-external" cx="150" cy="150" r="100" stroke-dasharray="280,80"
+                    filter="url(#filter-1)" />
+                <g />
+                <defs>
+                    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+                        <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                        <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1">
+                        </feGaussianBlur>
+                        <feColorMatrix
+                            values="0 0 0 0 0.266666667   0 0 0 0 0.694117647   0 0 0 0 0.607843137  0 0 0 0.7 0"
+                            in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+                        <feMerge>
+                            <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                    </filter>
+                </defs>
+        </svg>
+    </div>
+</body>
+<style>
+    html,
+    body {
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #circle-logo-within {
+        animation: rotate-just 1s linear infinite;
+        transform-origin: 150px 150px;
+    }
+
+    #circle-logo-external {
+        animation: rotate-back 2s linear infinite;
+        transform-origin: 150px 150px;
+        box-shadow: green 10px 10px;
+    }
+
+    .logo {
+        animation: logo-opacity 5s;
+    }
+
+
+    @keyframes rotate-just {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotate-back {
+        0% {
+            transform: rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateZ(-360deg);
+        }
+    }
+
+    @keyframes logo-opacity {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<script>
+    setTimeout(() => {
+        window.location.href = "index.html"
+    }, 3000)
+</script>
+
+</html>

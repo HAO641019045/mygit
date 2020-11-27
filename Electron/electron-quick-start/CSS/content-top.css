@@ -1,0 +1,54 @@
+.button-minimum:hover,.button-maximum:hover{
+    fill:rgba(63, 56, 56, 0.5);
+}
+
+.button-minimum:active,.button-maximum:active{
+    fill:rgba(63, 56, 56, 1);
+    transition: all 0.1s;
+}
+
+.button-closewd:active{
+    fill:rgba(248, 7, 7, 1);
+}
+
+.button-closewd:hover{
+    fill:rgba(248, 7, 7, 0.5);
+}
+
+.button-closewd,.button-maximum,.button-minimum{
+    cursor: pointer;
+    transition: all 0.5s;
+    fill:rgba(255,255,255,0);
+}
+
+.button-line{
+    fill:rgba(255,255,255,0);
+    stroke-width:2;
+    stroke:rgb(94, 88, 88);
+    pointer-events: none;
+}
+
+.content-top-title{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+.content-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    user-select:none;
+    -webkit-app-region: drag;
+}
+
+.content-top-logo{
+    height: 30px; 
+    z-index: 999;
+}
+
+.content-top-controlLogo{
+    height:30px;
+    width:99px;
+    -webkit-app-region: no-drag;
+}

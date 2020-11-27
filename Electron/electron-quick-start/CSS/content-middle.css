@@ -1,0 +1,102 @@
+
+.content-middle{
+	/* flex: 1; */
+	display: flex;
+    width: calc(100% - 10px);
+	left: 5px;
+    height: 300px;
+	position: relative;
+	user-select: none;
+	z-index: 2;
+}
+
+.content-middle-pattern,.content-middle-outdata,.content-middle-equstatus{
+	border: #CCCCCC solid 1px;
+	border-radius: 5px;
+	
+	background-color: #99CCFF90;
+	height: 100%;
+	margin: 0px 2px;
+}
+
+.content-middle-pattern{
+	/* background-color: #008000; */
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.content-middle-outdata{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+@font-face {
+	font-family:"LcdD";
+	src: url("../font/DS-DIGIB.TTF");
+}
+
+.contenrt-middle-outdata-font{
+	/* width: 200px; */
+	/* margin-top: 10px; */
+	display: block;
+	width: 200px;
+	font-size: 25px;
+	font-family: "LcdD";
+	font-weight: bold;
+	text-align: center;
+	
+	
+}
+.contenrt-middle-outdata-font-num{
+	font-size: 50px;
+}
+
+.content-middle-equstatus{
+	flex: 8;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	/* position: relative; */
+}
+.content-middle-equstatus-a{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* background-color: #008000; */
+	
+}
+
+.content-middle-equstatus-b{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* background-color: #172580; */
+	
+}
+.content-middle-equstatus-equ{
+	border-radius: 10px ;
+	border: burlywood solid 1px;
+	width: 120px;
+	height: 120px;
+	background-color: #CCFF6690;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	position: relative;
+	top: 0px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.content-middle-equstatus-equ:hover{
+	top: -10px;
+}

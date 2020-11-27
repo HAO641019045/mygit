@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <title>设备化产线控制系统 v1.0</title>
+</head>
+<link rel="stylesheet" href="CSS/content-top.css">
+<link rel="stylesheet" href="CSS/content-middle.css">
+<link rel="stylesheet" href="CSS/content-bottom.css"/>
+<link rel="stylesheet" href="CSS/content.css">
+<link rel="stylesheet" href="CSS/overall.css">
+<body>
+<div class="content" >
+	<div class="content-top" >
+		<img class="content-top-logo" src="img/logo.png" >
+		<span class="content-top-title">设备化产线控制系统 v:1.0</span>
+		<svg class="content-top-controlLogo">
+			<rect id="minimize" class="button-minimum" x="00" width="33" height="30" />
+			<rect id="maximize" class="button-maximum" x="33" width="33" height="30" />
+			<rect id="quit" class="button-closewd" x="66" width="33" height="30" />
+			<path class="button-line" d="M5 15 L25 15 Z M40 22 L60 22 L60 7 L40 7 Z M93 22 L73 7 Z M73 22 L93 7 Z" />
+		</svg>
+	</div>
+	<div class="content-middle">
+		<div class="content-middle-pattern">
+			<svg  style="height:310px; width: 310px; ">
+				<circle cx="155" cy="155" r="60" stroke="black" stroke-width="2" fill="none" />
+				<circle cx="155" cy="155" r="50" stroke="black" stroke-width="2" fill="none" />
+				<circle cx="155" cy="155" r="65" stroke="black" stroke-width="2" fill="none" />
+				<path d="M155 95 L155 215 Z M190 107 L120 203 M212 137 L98 173 M213 173 L98 137 M190 203 L120 106 Z" style="stroke-width: 2; stroke:black; " ></path>
+				<g id="content-middle-pattern-turntable">
+					<g id="content-middle-pattern-turntable-tray0">
+						<path d="M135 98  L135 15  L175 15  L175 98.5  Q155 91.5,134 98.8 Z" style="stroke-width: 2; stroke:black;fill: rgba(0,0,0,0);" shape-rendering="auto"></path>
+						<g fill="pink" style="stroke-width: 2; stroke:black;  transition: all 1s;">
+							<path d="M140 85  L140 20  L170 20  L170 85 Z M140 30  L140 20  L170 20  L170 30 Z M140 85  L140 75  L170 75  L170 85 Z M150 25  L160 25 Z" ></path>
+							<circle cx="155" cy="80" r="3" stroke-width="1" />
+						</g>
+					</g>
+				</g>
+			</svg>
+		</div>
+		<div class="content-middle-outdata">
+				<span class="contenrt-middle-outdata-font">今日检测总数</span>
+				<span class="contenrt-middle-outdata-font contenrt-middle-outdata-font-num">666</span>
+				<span class="contenrt-middle-outdata-font">检测完成数量</span>
+				<span class="contenrt-middle-outdata-font contenrt-middle-outdata-font-num">666</span>
+				<span class="contenrt-middle-outdata-font">检测未完成数</span>
+				<span class="contenrt-middle-outdata-font contenrt-middle-outdata-font-num">666</span>
+		</div>
+		<div class="content-middle-equstatus">
+			<div class="content-middle-equstatus-a">
+				<span class="content-middle-equstatus-equ">EQU</span>
+				<span class="content-middle-equstatus-equ">EQU</span>
+				<span class="content-middle-equstatus-equ">EQU</span>
+			</div>
+			<div class="content-middle-equstatus-b">
+				<span class="content-middle-equstatus-equ">EQU</span>
+				<span class="content-middle-equstatus-equ">EQU</span>
+				<span class="content-middle-equstatus-equ">EQU</span>
+			</div>
+		</div>
+	</div>
+	<div class="content-bottom">
+		<div class="content-bottom-funbutton-box">
+			<span class="content-bottom-funbutton">设备启动</span>
+			<span class="content-bottom-funbutton">开始运行</span>
+			<span class="content-bottom-funbutton">故障恢复</span>
+			<span class="content-bottom-funbutton">清除托盘</span>
+			<span class="content-bottom-funbutton">产线归位</span>
+			<span class="content-bottom-funbutton">刷新状态</span>
+		</div>
+	</div>
+	<div  class="img-back"></div>
+	</div>	<!-- div背景特效 -->
+</body>
+<script src="js/datouwang.js"></script>
+<script src="js/overall.js"></script>
+<script color="255,0,0" opacity="1" count="50" src="js/canvas-nest.js" zIndex="-1"></script>
+</html>

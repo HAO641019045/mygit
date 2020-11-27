@@ -1,0 +1,40 @@
+
+
+.content{
+    background-size: 1000%;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    box-shadow: black 0px 0px 10px;
+    animation: line-color  10s linear infinite;
+    background-image: linear-gradient(45deg, #ff6f4d, #FFFF66,#ffaa00);
+	
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.img-back {
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width:  calc(100% - 20px); 
+  height: calc(100% - 20px);;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes line-color{
+    0%{
+        background-position-x:0%;
+    }
+    50%{
+        background-position-x:100%;
+    }
+    100%{
+        background-position-x:0%;
+    }
+	
+}
